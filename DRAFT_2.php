@@ -1,5 +1,6 @@
 
 <?php
+//проблемы с кодировкой
 $r = fopen('dice.txt', 'r');
 $i = 0;
 $menu = array();

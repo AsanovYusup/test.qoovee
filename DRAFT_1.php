@@ -1,4 +1,5 @@
 <?php
+//проблемы с кодировкой
 $cat=$_POST['clothes'];
 $ctr=$_POST['country'];
 $pat[0]="/ая одежда$/i";
