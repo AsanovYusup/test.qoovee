@@ -1,41 +1,41 @@
+<?PHP  header("Content-Type: text/html; charset=utf-8");?>
 <?php
-//ïðîáëåìû ñ êîäèðîâêîé
 $cat=$_POST['clothes'];
 $ctr=$_POST['country'];
-$pat[0]="/àÿ îäåæäà$/i";
-$pat[1]="/à$/i";
-$pat[2]="/èÿ$/i";
-$pat[3]="/í$/i";
-$pat[4]="/è$/i";
-$pat[5]="/åò$/i";
-$pat[6]="/ð$/i";
-$pat[7]="/î$/i";
-$pat[8]="/é$/i";
-$pat[9]="/ä$/i";
-$pat[10]="/êè$/i";
-$pat[11]="/ü$/i";
-$pat[12]="/ÿ$/i";
-$clothes[13]="/cû$/i";
+$pat[0]="/Ð°Ñ Ð¾Ð´ÐµÐ¶Ð´Ð°$/i";
+$pat[1]="/Ð°$/i";
+$pat[2]="/Ð¸Ñ$/i";
+$pat[3]="/Ð½$/i";
+$pat[4]="/Ð¸$/i";
+$pat[5]="/ÐµÑ‚$/i";
+$pat[6]="/Ñ€$/i";
+$pat[7]="/Ð¾$/i";
+$pat[8]="/Ð¹$/i";
+$pat[9]="/Ð´$/i";
+$pat[10]="/ÐºÐ¸$/i";
+$pat[11]="/ÑŒ$/i";
+$pat[12]="/Ñ$/i";
+$clothes[13]="/cÑ‹$/i";
 
-$repl[0]="îé îäåæäû";
-$repl[1]="û";
-$repl[2]="èè";
-$repl[3]="íà";
-$repl[4]="è";
-$repl[5]="òà";
-$repl[6]="ðà";
-$repl[7]="î";
-$repl[8]="ÿ";
-$repl[9]="ä";	
-$repl[10]="åê";
-$repl[11]="è";
-$repl[12]="è";
-$clot[13]="îâ";
+$repl[0]="Ð¾Ð¹ Ð¾Ð´ÐµÐ¶Ð´Ñ‹";
+$repl[1]="Ñ‹";
+$repl[2]="Ð¸Ð¸";
+$repl[3]="Ð½Ð°";
+$repl[4]="Ð¸";
+$repl[5]="Ñ‚Ð°";
+$repl[6]="Ñ€Ð°";
+$repl[7]="Ð¾";
+$repl[8]="Ñ";
+$repl[9]="Ð´";	
+$repl[10]="ÐµÐº";
+$repl[11]="Ð¸";
+$repl[12]="Ð¸";
+$clot[13]="Ð¾Ð²";
 
 	$cat=preg_replace($pat, $repl, $cat);
 	$ctr=preg_replace($pat, $repl, $ctr);
 	if (isset($_POST['done'])) {
-		echo "Áàçà ïðîèçâîäèòåëåé"." ".$cat." "."èç"." ".$ctr;
+		echo "Ð‘Ð°Ð·Ð° Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÐµÐ¹"." ".$cat." "."Ð¸Ð·"." ".$ctr;
 	}
 	
 
@@ -45,8 +45,8 @@ $clot[13]="îâ";
 <head>
   <meta charset="utf-8">
   <form name="test" method="post" action="DRAFT_1.php">
-  	<input type="text" name="clothes" placeholder="Ââåäèòå êàòåãîðèþ" ><br>
-  	<input type="text" name="country" placeholder="Ââåäèòå ñòðàíó" ><br>
-  	<input type="submit" name="done" value="Îòïðàâèòü">
+  	<input type="text" name="clothes" placeholder="Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑŽ" ><br>
+  	<input type="text" name="country" placeholder="Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð°Ð½Ñƒ" ><br>
+  	<input type="submit" name="done" value="ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ">
   </form>
 
