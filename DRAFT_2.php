@@ -1,6 +1,6 @@
-
+<?PHP  header("Content-Type: text/html; charset=utf-8");?>
 <?php
-//ïðîáëåìû ñ êîäèðîâêîé
+//Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ñ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ¾Ð¹
 $r = fopen('dice.txt', 'r');
 $i = 0;
 $menu = array();
@@ -40,6 +40,6 @@ if ($a1==$a2 || $a1==$a3 || $a2==$a3 ) {
 }
 // echo $scheme;
 $result=$count-$scheme;
-echo "Êîëè÷åñòâî ðàçëè÷íûõ ñõåì:".$result;
+echo "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ñ… ÑÑ…ÐµÐ¼:".$result;
 
 ?>
